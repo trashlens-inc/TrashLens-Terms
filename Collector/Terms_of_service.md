@@ -100,7 +100,7 @@
 
 山本虎太郎  
 Tel: 080-2041-3445  
-メール: yamamoto@trashlens.co.jp  
+メール: yamamoto@trashlens.com
 責任者：山本虎太郎
 
 ## 第 14 条（準拠法・管轄裁判所）
