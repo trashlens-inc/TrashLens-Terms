@@ -31,7 +31,7 @@
 
 ## 第 5 条(個人情報等の取り扱い)
 
-個人情報及び利用者情報については、当方が別途定める[プライバシーポリシー](https://github.com/trashlens-inc/TrashLens-Terms/blob/main/Collector/privacy_policy.md)に則り、適正に取り扱うこととします。
+個人情報及び利用者情報については、当方が別途定める[プライバシーポリシー](https://github.com/trashlens-inc/TrashLens-Terms/blob/main/TrashLens/privacy_policy.md)に則り、適正に取り扱うこととします。
 
 ## 第 6 条(禁止行為)
 
