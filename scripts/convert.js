@@ -94,6 +94,22 @@ async function copyCssFile() {
 }
 
 /**
+ * インデックスHTMLファイルをコピーする関数
+ * @returns {Promise<void>}
+ */
+async function copyIndexFile() {
+  try {
+    const srcIndexPath = path.join(baseDir, 'index.html');
+    const destIndexPath = path.join(htmlOutputDir, 'index.html');
+    
+    await fs.copy(srcIndexPath, destIndexPath);
+    console.log(`インデックスファイルをコピーしました: ${srcIndexPath} -> ${destIndexPath}`);
+  } catch (error) {
+    console.error('インデックスファイルのコピー中にエラーが発生しました:', error);
+  }
+}
+
+/**
  * メイン処理
  */
 async function main() {
@@ -109,6 +125,8 @@ async function main() {
       const outputPath = path.join(htmlOutputDir, file.outputName);
       await convertMarkdownToHtml(file.path, outputPath, file.title);
     }
+    
+    await copyIndexFile();
     
     console.log('全ファイルの変換が完了しました！');
   } catch (error) {
