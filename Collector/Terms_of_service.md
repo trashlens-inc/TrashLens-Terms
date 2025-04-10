@@ -1,6 +1,6 @@
-# TrashLens Collector 利用規約
+# Trash Lens Collector 利用規約
 
-この規約は、お客様が、山本虎太郎(以下「当方」)が提供する「TrashLens Collector」
+この規約は、お客様が、山本虎太郎(以下「当方」)が提供する「Trash Lens Collector」
 サービス(以下「本サービス」)をご利用いただく際の取り扱いにつき定めるものです。
 本規約に同意したうえで本サービスをご利用ください。
 
