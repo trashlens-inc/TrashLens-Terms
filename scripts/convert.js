@@ -1,6 +1,6 @@
 /**
  * マークダウンファイルをHTMLに変換するスクリプト
- * TrashLens-LPのスタイルを参考にしたHTMLを生成します
+ * Trash Lens-LPのスタイルを参考にしたHTMLを生成します
  */
 
 const fs = require('fs-extra');
@@ -11,10 +11,10 @@ const baseDir = path.resolve(__dirname, '..');
 const htmlOutputDir = path.join(baseDir, 'build');
 
 const markdownFiles = [
-  { path: path.join(baseDir, 'TrashLens', 'privacy_policy.md'), outputName: 'TrashLens-privacy_policy.html', title: 'TrashLens プライバシーポリシー' },
-  { path: path.join(baseDir, 'TrashLens', 'Terms_of_service.md'), outputName: 'TrashLens-Terms_of_service.html', title: 'TrashLens 利用規約' },
-  { path: path.join(baseDir, 'Collector', 'privacy_policy.md'), outputName: 'Collector-privacy_policy.html', title: 'TrashLens Collector プライバシーポリシー' },
-  { path: path.join(baseDir, 'Collector', 'Terms_of_service.md'), outputName: 'Collector-Terms_of_service.html', title: 'TrashLens Collector 利用規約' }
+  { path: path.join(baseDir, 'TrashLens', 'privacy_policy.md'), outputName: 'TrashLens-privacy_policy.html', title: 'Trash Lens プライバシーポリシー' },
+  { path: path.join(baseDir, 'TrashLens', 'Terms_of_service.md'), outputName: 'TrashLens-Terms_of_service.html', title: 'Trash Lens 利用規約' },
+  { path: path.join(baseDir, 'Collector', 'privacy_policy.md'), outputName: 'Collector-privacy_policy.html', title: 'Trash Lens Collector プライバシーポリシー' },
+  { path: path.join(baseDir, 'Collector', 'Terms_of_service.md'), outputName: 'Collector-Terms_of_service.html', title: 'Trash Lens Collector 利用規約' }
 ];
 
 /**
