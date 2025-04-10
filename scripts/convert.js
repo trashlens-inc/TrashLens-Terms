@@ -78,6 +78,22 @@ async function convertMarkdownToHtml(filePath, outputPath, title) {
 }
 
 /**
+ * CSSファイルをコピーする関数
+ * @returns {Promise<void>}
+ */
+async function copyCssFile() {
+  try {
+    const srcCssPath = path.join(baseDir, 'src', 'css', 'styles.css');
+    const destCssPath = path.join(htmlOutputDir, 'css', 'styles.css');
+    
+    await fs.copy(srcCssPath, destCssPath);
+    console.log(`CSSファイルをコピーしました: ${srcCssPath} -> ${destCssPath}`);
+  } catch (error) {
+    console.error('CSSファイルのコピー中にエラーが発生しました:', error);
+  }
+}
+
+/**
  * メイン処理
  */
 async function main() {
@@ -86,6 +102,8 @@ async function main() {
     console.log(`出力ディレクトリを確認しました: ${htmlOutputDir}`);
     
     await fs.ensureDir(path.join(htmlOutputDir, 'css'));
+    
+    await copyCssFile();
     
     for (const file of markdownFiles) {
       const outputPath = path.join(htmlOutputDir, file.outputName);
