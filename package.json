@@ -1,0 +1,13 @@
+{
+  "name": "trashlens-terms-converter",
+  "version": "1.0.0",
+  "description": "マークダウンファイルをHTMLに変換するツール",
+  "main": "scripts/convert.js",
+  "scripts": {
+    "start": "node scripts/convert.js"
+  },
+  "dependencies": {
+    "marked": "^11.1.0",
+    "fs-extra": "^11.2.0"
+  }
+}
