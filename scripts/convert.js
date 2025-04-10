@@ -48,7 +48,7 @@ function createHtmlTemplate(title, content) {
     
     <footer class="footer">
         <p>&copy; ${new Date().getFullYear()} Trash Lens 株式会社</p>
-        <p>お問い合わせ: yamamoto@trashlens.co.jp</p>
+        <p>お問い合わせ: contact@trashlens.co.jp</p>
     </footer>
 </body>
 </html>`;
