@@ -8,7 +8,7 @@ const path = require('path');
 const { marked } = require('marked');
 
 const baseDir = path.resolve(__dirname, '..');
-const htmlOutputDir = path.join(baseDir, 'html');
+const htmlOutputDir = path.join(baseDir, 'build');
 
 const markdownFiles = [
   { path: path.join(baseDir, 'TrashLens', 'privacy_policy.md'), outputName: 'TrashLens-privacy_policy.html', title: 'TrashLens プライバシーポリシー' },
