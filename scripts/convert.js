@@ -14,7 +14,9 @@ const markdownFiles = [
   { path: path.join(baseDir, 'TrashLens', 'privacy_policy.md'), outputName: 'TrashLens-privacy_policy.html', title: 'TrashLens プライバシーポリシー' },
   { path: path.join(baseDir, 'TrashLens', 'Terms_of_service.md'), outputName: 'TrashLens-Terms_of_service.html', title: 'TrashLens 利用規約' },
   { path: path.join(baseDir, 'Collector', 'privacy_policy.md'), outputName: 'Collector-privacy_policy.html', title: 'TrashLens Collector プライバシーポリシー' },
-  { path: path.join(baseDir, 'Collector', 'Terms_of_service.md'), outputName: 'Collector-Terms_of_service.html', title: 'TrashLens Collector 利用規約' }
+  { path: path.join(baseDir, 'Collector', 'Terms_of_service.md'), outputName: 'Collector-Terms_of_service.html', title: 'TrashLens Collector 利用規約' },
+  { path: path.join(baseDir, 'LG-Admin', 'privacy_policy.md'), outputName: 'LG-Admin-privacy_policy.html', title: 'LG-Admin プライバシーポリシー' },
+  { path: path.join(baseDir, 'LG-Admin', 'Terms_of_service.md'), outputName: 'LG-Admin-Terms_of_service.html', title: 'LG-Admin 利用規約' }
 ];
 
 /**
