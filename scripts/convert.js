@@ -54,6 +54,16 @@ function createHtmlTemplate(title, content) {
         <p>&copy; ${new Date().getFullYear()} Trash Lens 株式会社</p>
         <p>お問い合わせ: contact@trashlens.co.jp</p>
     </footer>
+
+    <script src="https://unpkg.com/budoux/bundle/budoux.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var parser = budoux.loadDefaultJapaneseParser();
+            document.querySelectorAll('.header, .container').forEach(function (el) {
+                parser.applyElement(el);
+            });
+        });
+    </script>
 </body>
 </html>`;
 }
