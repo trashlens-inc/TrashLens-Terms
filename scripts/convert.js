@@ -55,14 +55,15 @@ function createHtmlTemplate(title, content) {
         <p>お問い合わせ: contact@trashlens.co.jp</p>
     </footer>
 
-    <script src="https://unpkg.com/budoux/bundle/budoux.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var parser = budoux.loadDefaultJapaneseParser();
-            document.querySelectorAll('.header, .container').forEach(function (el) {
-                parser.applyElement(el);
-            });
-        });
+    <script type="module">
+        import { loadDefaultJapaneseParser } from 'https://cdn.jsdelivr.net/npm/budoux@0.8.4/+esm';
+        const parser = loadDefaultJapaneseParser();
+        const apply = () => document.querySelectorAll('.header, .container').forEach((el) => parser.applyToElement(el));
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', apply);
+        } else {
+            apply();
+        }
     </script>
 </body>
 </html>`;
